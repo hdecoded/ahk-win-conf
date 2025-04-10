@@ -9,7 +9,7 @@
 
 ### ⌨️ Smart Modifier Keys
 - **CapsLock Tap = `Esc`, Hold = `Ctrl`**
-- **Right Ctrl Hold = `Ctrl+Shift+Alt` - Hyper Key**
+- **Right Ctrl Hold = `Ctrl+Shift+Alt` - Hyper Key ()**
 
 ### 🪟 Window Management
 - **Ctrl+M** → Minimize active window  
@@ -18,31 +18,31 @@
 ### 🧠 Productivity Apps (Ctrl+Shift+Alt+Key)
 | Shortcut       | Action                        |
 |----------------|-------------------------------|
-| `+!d` (`D`)     | Launch/Focus **Todoist**       |
-| `+!o` (`O`)     | Launch/Focus **Obsidian**      |
-| `+!s` (`S`)     | Launch/Focus **Spark Email**   |
+| `◆ + d`    | Launch/Focus **Todoist**       |
+| `◆ + o`    | Launch/Focus **Obsidian**      |
+| `◆ + s`    | Launch/Focus **Spark Email**   |
 
 ### 🌐 Web Apps via Chrome
 | Shortcut       | App (Chrome Shortcut)         |
 |----------------|-------------------------------|
-| `+!w` (`W`)     | **WhatsApp Web**              |
-| `+!e` (`E`)     | **Outlook (PWA)**             |
-| `+!a` (`A`)     | **Personal Chrome window**       |
-| `+!p` (`P`)     | **Work Chrome window**          |
+| `◆ + w`    | **WhatsApp Web**              |
+| `◆ + e`    | **Outlook (PWA)**             |
+| `◆ + a`    | **Personal Chrome window**       |
+| `◆ + p`    | **Work Chrome window**          |
 
 ### 🔐 OT Tools
 | Shortcut       | Tool                          |
 |----------------|-------------------------------|
-| `+!n` (`N`)     | NetIQ OTP Tool                |
-| `+!t` (`T`)     | Microsoft Teams               |
+| `◆ + n`    | NetIQ OTP Tool                |
+| `◆ + t`    | Microsoft Teams               |
 
 ### 💻 Developer Tools
 | Shortcut       | App                           |
 |----------------|-------------------------------|
-| `+!v` (`V`)     | Visual Studio Code            |
-| `+!c` (`C`)     | ChatGPT Desktop App           |
-| `+!g` (`G`)     | Windows Terminal              |
-| `+!i` (`I`)     | IntelliJ IDEA                 |
+| `◆ + v`    | Visual Studio Code            |
+| `◆ + c`    | ChatGPT Desktop App           |
+| `◆ + g`    | Windows Terminal              |
+| `◆ + i`    | IntelliJ IDEA                 |
 
 ---
 
