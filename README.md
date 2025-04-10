@@ -27,8 +27,8 @@
 |----------------|-------------------------------|
 | `+!w` (`W`)     | **WhatsApp Web**              |
 | `+!e` (`E`)     | **Outlook (PWA)**             |
-| `+!a` (`A`)     | **Personal Chrome/Arc**       |
-| `+!p` (`P`)     | **OpenText Web App**          |
+| `+!a` (`A`)     | **Personal Chrome window**       |
+| `+!p` (`P`)     | **Work Chrome window**          |
 
 ### 🔐 OT Tools
 | Shortcut       | Tool                          |
