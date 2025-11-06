@@ -74,11 +74,11 @@ RControl Up:: {
 ; === Productivity Apps ===
 
 ; Launch or focus Todoist (Ctrl+Shift+Alt+T)
-^+!d:: {
-    if WinExist("ahk_exe Todoist.exe") {
+^+!t:: {
+    if WinExist("ahk_exe todoist.exe") {
         WinActivate
     } else {
-        Run "C:\Users\hdasari\AppData\Local\Programs\todoist\Todoist.exe"
+        Run "C:\Users\hdasari\Desktop\Todoist.lnk"
     }
 }
 
@@ -91,12 +91,12 @@ RControl Up:: {
     }
 }
 
-; Launch or focus Spark Email (Ctrl+Shift+Alt+E)
+; Launch or focus Spark Email (Ctrl+Shift+Alt+S)
 ^+!s:: {
-    if WinExist("ahk_exe Spark.exe") {
+    if WinExist("ahk_exe Sunsama.exe") {
         WinActivate
     } else {
-        Run "C:\Users\hdasari\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Spark Desktop.lnk"
+        Run "C:\Users\hdasari\AppData\Local\Programs\sunsama\Sunsama.exe"
     }
 }
 
@@ -111,7 +111,16 @@ RControl Up:: {
     }
 }
 
-; Launch or focus Outlook PWA (Ctrl+Shift+Alt+D)
+; Launch or focus Google Gemini Web (Ctrl+Shift+Alt+W)
+^+!x:: {
+    if WinExist("ahk_exe chrome.exe") && WinExist("Google Gemini") {
+        WinActivate "Google Gemini"
+    } else {
+        Run '"C:\Users\hdasari\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google Gemini.lnk"'
+    }
+}
+
+; Launch or focus Outlook PWA (Ctrl+Shift+Alt+e)
 ^+!e:: {
     if WinExist("ahk_exe chrome.exe") && WinExist("Outlook (PWA)") {
         WinActivate "Outlook (PWA)"
@@ -121,9 +130,9 @@ RControl Up:: {
 }
 
 ; Launch or focus Personal Chrome profile/app (Ctrl+Shift+Alt+A)
-^+!a:: {
-    if WinExist("ahk_exe chrome.exe") && WinExist("arc") {
-        WinActivate "arc"
+^+!d:: {
+    if WinExist("ahk_exe chrome.exe") && WinExist("dia") {
+        WinActivate "dia"
     } else {
         Run "chrome.exe"
     }
@@ -131,8 +140,8 @@ RControl Up:: {
 
 ; Launch or focus OpenText in Chrome (Ctrl+Shift+Alt+P)
 ^+!p:: {
-    if WinExist("ahk_exe chrome.exe") && WinExist("opentext") {
-        WinActivate "opentext"
+    if WinExist("ahk_exe chrome.exe") && WinExist("pentext") {
+        WinActivate "pentext"
     } else {
         Run "chrome.exe"
     }
@@ -150,7 +159,7 @@ RControl Up:: {
 }
 
 ; Launch or focus Microsoft Teams (Ctrl+Shift+Alt+F)
-^+!t:: {
+^+!6:: {
     if WinExist("ahk_exe ms-teams.exe") {
         WinActivate
     } else {
