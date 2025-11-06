@@ -7,8 +7,6 @@
 ;     ~^s::Reload()
 ; #HotIf
 
-#Requires AutoHotkey v2.0+
-
 ; Permanently turn off the CapsLock state (v2 function)
 ; SetStoreKeyBehavior(false)
 
@@ -28,12 +26,11 @@
         ; If it was a tap, send Escape (v2 function syntax)
         Send("{Esc}")
     }
-    
     ; No "return" is needed; the closing brace } ends the hotkey.
 }
 
 ; === Right Ctrl: Hold = Ctrl+Shift+Alt (Tap does nothing) ===
-RCtrlTapThreshold := 200  ; Max ms for detecting hold
+RCtrlTapThreshold := 50  ; Max ms for detecting hold
 RCtrlPressedTime := 0
 RCtrlIsHeld := false
 
@@ -61,9 +58,12 @@ RControl Up:: {
 
 ; === Window Management ===
 
-; Minimize all windows with Ctrl+Shift+Alt+M
+; Minimize all windows and reopen active window with Ctrl+Shift+Alt+M
 ^+!m:: {
+    ActiveTitle := WinGetTitle("A")
     WinMinimizeAll()
+    WinRestore(ActiveTitle)
+    return
 }
 
 ; Minimize active window with Ctrl+M
