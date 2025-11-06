@@ -204,3 +204,33 @@ RControl Up:: {
         Run "idea64.exe"
     }
 }
+
+; --- RCtrl-chord:  Ctrl+Shift+Alt+J  →  Down Arrow -----------------
+
+^+!j:: {                              ; Ctrl + Shift + Alt + J
+    ; Lift the mods, tap ↓, then put them back so the chord stays alive
+    Send "{Ctrl Up}{Shift Up}{Alt Up}{Down}{Ctrl Down}{Shift Down}{Alt Down}"
+}
+; Hold RCtrl  ≥50 ms  →  Ctrl+Shift+Alt are down, then…
+^+!h:: {                         ; H  →  ←
+    Send "{Ctrl Up}{Shift Up}{Alt Up}{Left}{Ctrl Down}{Shift Down}{Alt Down}"
+}
+
+^+!k:: {                         ; K  →  ↑
+    Send "{Ctrl Up}{Shift Up}{Alt Up}{Up}{Ctrl Down}{Shift Down}{Alt Down}"
+}
+
+^+!l:: {                         ; L  →  →
+    Send "{Ctrl Up}{Shift Up}{Alt Up}{Right}{Ctrl Down}{Shift Down}{Alt Down}"
+}
+
+; === Chrome Shortcuts for back and forward navigation ===
+#HotIf WinActive("ahk_exe chrome.exe")
+; Ctrl + ] → Alt+Left (back)
+^[::Send("{Alt Down}{Left}{Alt Up}")
+
+; Ctrl + [ → Alt+Right (forward)
+^]::Send("{Alt Down}{Right}{Alt Up}")  ; Ctrl + [ (BracketLeft)
+
+#HotIf  ; ends the context
+
