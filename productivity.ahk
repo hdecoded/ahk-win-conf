@@ -234,3 +234,38 @@ RControl Up:: {
 
 #HotIf  ; ends the context
 
+; ; === Double Tap Left Shift = Win+Tab | Hold = Normal Left Shift ===
+; lastLShiftTime := 0
+; lShiftHeld := false
+
+; LShift:: {
+;     global lastLShiftTime, lShiftHeld
+;     lShiftHeld := false
+;     pressTime := A_TickCount
+
+;     ; Start timer to check for hold
+;     SetTimer(CheckLShiftHold, -150)
+    
+;     ; Check for double-tap
+;     if (pressTime - lastLShiftTime < 300) {
+;         Send("#{Tab}")  ; Win + Tab
+;         lastLShiftTime := 0
+;     } else {
+;         lastLShiftTime := pressTime
+;     }
+; }
+
+; CheckLShiftHold() {
+;     global lShiftHeld
+;     if GetKeyState("LShift", "P") {
+;         lShiftHeld := true
+;         Send("{LShift Down}")
+;     }
+; }
+
+; LShift Up:: {
+;     global lShiftHeld
+;     if lShiftHeld {
+;         Send("{LShift Up}")
+;     }
+; }
