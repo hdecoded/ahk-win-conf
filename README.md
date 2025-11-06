@@ -15,9 +15,9 @@
 ### 🧠 Productivity Apps (◆ + Key)
 | Shortcut         | Action                        |
 |------------------|-------------------------------|
-| `◆ + T` | Launch/Focus **Todoist**       |
-| `◆ + O` | Launch/Focus **Obsidian**      |
-| `◆ + S` | Launch/Focus **Sunsama**       |
+| `◆ + T` | **Todoist**       |
+| `◆ + O` | **Obsidian**      |
+| `◆ + S` | **Sunsama**       |
 
 ### 🌐 Web Apps via Chrome
 | Shortcut         | App (Chrome Shortcut)         |
@@ -31,24 +31,24 @@
 ### 🔐 OT Tools
 | Shortcut         | Tool                          |
 |------------------|-------------------------------|
-| `◆ + N` | NetIQ OTP Tool                |
-| `◆ + 6` | Microsoft Teams               |
+| `◆ + N` | **NetIQ OTP Tool**                |
+| `◆ + 6` | **Microsoft Teams**              |
 
 ### 💻 Developer Tools
 | Shortcut         | App                           |
 |------------------|-------------------------------|
-| `◆ + V` | Visual Studio Code            |
-| `◆ + C` | ChatGPT Desktop App           |
-| `◆ + G` | Windows Terminal              |
-| `◆ + I` | IntelliJ IDEA                 |
+| `◆ + V` | **Visual Studio Code**           |
+| `◆ + C` | **ChatGPT Desktop App**          |
+| `◆ + G` | **Windows Terminal**              |
+| `◆ + I` | **IntelliJ IDEA **                |
 
 ### 🎯 Navigation & Browser Shortcuts
 | Shortcut         | Action                        |
 |------------------|-------------------------------|
-| `◆ + H` | Left Arrow (when RCtrl held)   |
-| `◆ + J` | Down Arrow (when RCtrl held)   |
-| `◆ + K` | Up Arrow (when RCtrl held)     |
-| `◆ + L` | Right Arrow (when RCtrl held)  |
+| `◆ + H` | **Move Left**   |
+| `◆ + J` | **Move Down**   |
+| `◆ + K` | **Move Up**     |
+| `◆ + L` | **Move Right**  |
 | `Ctrl+[` (in Chrome) | Go Back (Alt+Left)            |
 | `Ctrl+]` (in Chrome) | Go Forward (Alt+Right)        |
 
