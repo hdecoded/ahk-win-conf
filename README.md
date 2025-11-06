@@ -10,45 +10,45 @@
 
 ### 🪟 Window Management
 - **Ctrl+M** → Minimize active window  
-- **Ctrl+Shift+Alt+M** → Minimize all windows and restore active window
+- **◆ + M** → Minimize all windows and restore active window
 
-### 🧠 Productivity Apps (Ctrl+Shift+Alt+Key)
+### 🧠 Productivity Apps (◆ + Key)
 | Shortcut         | Action                        |
 |------------------|-------------------------------|
-| `Ctrl+Shift+Alt+T` | Launch/Focus **Todoist**       |
-| `Ctrl+Shift+Alt+O` | Launch/Focus **Obsidian**      |
-| `Ctrl+Shift+Alt+S` | Launch/Focus **Sunsama**       |
+| `◆ + T` | Launch/Focus **Todoist**       |
+| `◆ + O` | Launch/Focus **Obsidian**      |
+| `◆ + S` | Launch/Focus **Sunsama**       |
 
 ### 🌐 Web Apps via Chrome
 | Shortcut         | App (Chrome Shortcut)         |
 |------------------|-------------------------------|
-| `Ctrl+Shift+Alt+W` | **WhatsApp Web**              |
-| `Ctrl+Shift+Alt+X` | **Google Gemini**             |
-| `Ctrl+Shift+Alt+E` | **Outlook (PWA)**             |
-| `Ctrl+Shift+Alt+D` | **Personal Chrome/Dia**       |
-| `Ctrl+Shift+Alt+P` | **OpenText Web App**          |
+| `◆ + W` | **WhatsApp Web**              |
+| `◆ + X` | **Google Gemini**             |
+| `◆ + E` | **Outlook (PWA)**             |
+| `◆ + D` | **Personal Chrome/Dia**       |
+| `◆ + P` | **OpenText Web App**          |
 
 ### 🔐 OT Tools
 | Shortcut         | Tool                          |
 |------------------|-------------------------------|
-| `Ctrl+Shift+Alt+N` | NetIQ OTP Tool                |
-| `Ctrl+Shift+Alt+6` | Microsoft Teams               |
+| `◆ + N` | NetIQ OTP Tool                |
+| `◆ + 6` | Microsoft Teams               |
 
 ### 💻 Developer Tools
 | Shortcut         | App                           |
 |------------------|-------------------------------|
-| `Ctrl+Shift+Alt+V` | Visual Studio Code            |
-| `Ctrl+Shift+Alt+C` | ChatGPT Desktop App           |
-| `Ctrl+Shift+Alt+G` | Windows Terminal              |
-| `Ctrl+Shift+Alt+I` | IntelliJ IDEA                 |
+| `◆ + V` | Visual Studio Code            |
+| `◆ + C` | ChatGPT Desktop App           |
+| `◆ + G` | Windows Terminal              |
+| `◆ + I` | IntelliJ IDEA                 |
 
 ### 🎯 Navigation & Browser Shortcuts
 | Shortcut         | Action                        |
 |------------------|-------------------------------|
-| `Ctrl+Shift+Alt+H` | Left Arrow (when RCtrl held)   |
-| `Ctrl+Shift+Alt+J` | Down Arrow (when RCtrl held)   |
-| `Ctrl+Shift+Alt+K` | Up Arrow (when RCtrl held)     |
-| `Ctrl+Shift+Alt+L` | Right Arrow (when RCtrl held)  |
+| `◆ + H` | Left Arrow (when RCtrl held)   |
+| `◆ + J` | Down Arrow (when RCtrl held)   |
+| `◆ + K` | Up Arrow (when RCtrl held)     |
+| `◆ + L` | Right Arrow (when RCtrl held)  |
 | `Ctrl+[` (in Chrome) | Go Back (Alt+Left)            |
 | `Ctrl+]` (in Chrome) | Go Forward (Alt+Right)        |
 
