@@ -6,7 +6,7 @@
 
 ### ⌨️ Smart Modifier Keys
 - **CapsLock Tap = `Esc`, Hold = `Ctrl`**
-- **Right Ctrl Hold = `Ctrl+Shift+Alt`** 
+- **Right Ctrl Hold = `Ctrl+Shift+Alt` - Hyper Key (◆)**
 
 ### 🪟 Window Management
 - **Ctrl+M** → Minimize active window  
