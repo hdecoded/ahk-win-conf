@@ -1,38 +1,35 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 
 ; === Reload Script in VS Code with Ctrl+S ===
 ; ~ allows you to trigger a reload with ctrl + s
-#HotIf WinActive(' - Visual Studio Code')
-    ~^s::Reload()
-#HotIf
 
-; === CapsLock: Tap = Esc, Hold = Ctrl ===
-tapThreshold := 200  ; Max delay (ms) to consider as a tap
-capsTapTimer := 0
-capsIsHeld := false
+; #HotIf WinActive(' - Visual Studio Code')
+;     ~^s::Reload()
+; #HotIf
 
-CapsLock:: {
-    capsIsHeld := false
-    capsTapTimer := A_TickCount
-    SetTimer(WaitToSendCtrl, -tapThreshold)
-}
+#Requires AutoHotkey v2.0+
 
-WaitToSendCtrl() {
-    global capsIsHeld
-    ; If CapsLock is still held after delay, treat as Ctrl
-    if GetKeyState("CapsLock", "P") {
-        capsIsHeld := true
-        Send("{Ctrl Down}")
-    }
-}
+; Permanently turn off the CapsLock state (v2 function)
+; SetStoreKeyBehavior(false)
 
-CapsLock Up:: {
-    global capsIsHeld, capsTapTimer
-    if capsIsHeld {
-        Send("{Ctrl Up}")
-    } else {
+; --- CapsLock as Esc (Tap) / Ctrl (Hold) ---
+*CapsLock:: {
+    ; Send Ctrl down immediately (v2 function syntax)
+    Send("{Ctrl down}")
+    
+    ; Wait for the physical key to be released (v2 function syntax)
+    KeyWait("CapsLock")
+    
+    ; Send Ctrl up (v2 function syntax)
+    Send("{Ctrl up}")
+    
+    ; This if-statement logic is the same in v1 and v2
+    if (A_TimeSinceThisHotkey < 200) {
+        ; If it was a tap, send Escape (v2 function syntax)
         Send("{Esc}")
     }
+    
+    ; No "return" is needed; the closing brace } ends the hotkey.
 }
 
 ; === Right Ctrl: Hold = Ctrl+Shift+Alt (Tap does nothing) ===
