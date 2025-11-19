@@ -14,13 +14,13 @@
 *CapsLock:: {
     ; Send Ctrl down immediately (v2 function syntax)
     Send("{Ctrl down}")
-    
+
     ; Wait for the physical key to be released (v2 function syntax)
     KeyWait("CapsLock")
-    
+
     ; Send Ctrl up (v2 function syntax)
     Send("{Ctrl up}")
-    
+
     ; This if-statement logic is the same in v1 and v2
     if (A_TimeSinceThisHotkey < 200) {
         ; If it was a tap, send Escape (v2 function syntax)
@@ -75,10 +75,10 @@ RControl Up:: {
 
 ; Launch or focus Todoist (Ctrl+Shift+Alt+T)
 ^+!t:: {
-    if WinExist("ahk_exe todoist.exe") {
+    if WinExist("ahk_exe Todoist.exe") {
         WinActivate
     } else {
-        Run "C:\Users\hdasari\Desktop\Todoist.lnk"
+        Run "C:\Users\hdasari\Documents\Todoist.lnk"
     }
 }
 
@@ -227,10 +227,10 @@ RControl Up:: {
 ; === Chrome Shortcuts for back and forward navigation ===
 #HotIf WinActive("ahk_exe chrome.exe")
 ; Ctrl + ] → Alt+Left (back)
-^[::Send("{Alt Down}{Left}{Alt Up}")
+^[:: Send("{Alt Down}{Left}{Alt Up}")
 
 ; Ctrl + [ → Alt+Right (forward)
-^]::Send("{Alt Down}{Right}{Alt Up}")  ; Ctrl + [ (BracketLeft)
+^]:: Send("{Alt Down}{Right}{Alt Up}")  ; Ctrl + [ (BracketLeft)
 
 #HotIf  ; ends the context
 
@@ -245,7 +245,7 @@ RControl Up:: {
 
 ;     ; Start timer to check for hold
 ;     SetTimer(CheckLShiftHold, -150)
-    
+
 ;     ; Check for double-tap
 ;     if (pressTime - lastLShiftTime < 300) {
 ;         Send("#{Tab}")  ; Win + Tab
