@@ -262,7 +262,7 @@ RControl Up:: {
 #HotIf  ; ends the context
 
 ; ; === Double Tap Left Shift = Win+Tab | Hold = Normal Left Shift ===
-lastLShiftTime := 0
+/* lastLShiftTime := 0
 lShiftHeld := false
 
 LShift:: {
@@ -296,3 +296,4 @@ LShift Up:: {
         Send("{LShift Up}")
     }
 }
+*/
