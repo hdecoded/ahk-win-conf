@@ -29,6 +29,33 @@
     ; No "return" is needed; the closing brace } ends the hotkey.
 }
 
+; === Right Alt: Hold = Ctrl+Shift+Alt (Tap does nothing) ===
+RAltTapThreshold := 50  ; Max ms for detecting hold
+RAltPressedTime := 0
+RAltIsHeld := false
+
+*RAlt:: {
+    global RAltPressedTime, RAltIsHeld
+    RAltPressedTime := A_TickCount
+    RAltIsHeld := false
+    SetTimer(CheckRAltHold, -RAltTapThreshold)
+}
+
+CheckRAltHold() {
+    global RAltIsHeld
+    if GetKeyState("RAlt", "P") {
+        RAltIsHeld := true
+        Send("{Ctrl Down}{Shift Down}{Alt Down}")
+    }
+}
+
+*RAlt Up:: {
+    global RAltIsHeld
+    if RAltIsHeld {
+        Send("{Ctrl Up}{Shift Up}{Alt Up}")
+    }
+}
+
 ; === Right Ctrl: Hold = Ctrl+Shift+Alt (Tap does nothing) ===
 RCtrlTapThreshold := 50  ; Max ms for detecting hold
 RCtrlPressedTime := 0
