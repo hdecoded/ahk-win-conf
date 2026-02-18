@@ -161,7 +161,7 @@ RControl Up:: {
     if WinExist("ahk_exe chrome.exe") && WinExist("dia") {
         WinActivate "dia"
     } else {
-        Run "chrome.exe"
+        Run "chrome.exe --window-name=dia"
     }
 }
 
@@ -170,7 +170,16 @@ RControl Up:: {
     if WinExist("ahk_exe chrome.exe") && WinExist("pentext") {
         WinActivate "pentext"
     } else {
-        Run "chrome.exe"
+        Run "chrome.exe --window-name=pentext"
+    }
+}
+
+; Launch or focus pen2 in Chrome (Ctrl+Shift+Alt+2)
+^+!2:: {
+    if WinExist("ahk_exe chrome.exe") && WinExist("pen2") {
+        WinActivate "pen2"
+    } else {
+        Run "chrome.exe --window-name=pen2"
     }
 }
 
