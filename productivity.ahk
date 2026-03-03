@@ -183,6 +183,15 @@ RControl Up:: {
     }
 }
 
+; Launch or focus Spark Desktop (Ctrl+Shift+Alt+3)
+^+!3:: {
+    if WinExist("ahk_exe Spark Desktop.exe") && WinExist("Spark Desktop") {
+        WinActivate "Spark Desktop"
+    } else {
+        Run "C:\Users\hdasari\AppData\Local\Programs\SparkDesktop\Spark Desktop.exe"
+    }
+}
+
 ; === OT Tools ===
 
 ; Launch or focus NetIQ OTP Tool (Ctrl+Shift+Alt+N)
