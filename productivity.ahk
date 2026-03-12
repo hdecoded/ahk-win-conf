@@ -118,11 +118,34 @@ RControl Up:: {
     }
 }
 
-; Launch or focus Spark Email (Ctrl+Shift+Alt+S)
+; Launch or focus Sunsama (Ctrl+Shift+Alt+S)
 ^+!s:: {
-    if WinExist("ahk_exe Sunsama.exe") {
-        WinActivate
-    } else {
+    ; Get a list of all Sunsama windows
+    try {
+        sWindows := WinGetList("ahk_exe Sunsama.exe")
+        targetHwnd := 0
+        maxArea := 0
+
+        for hwnd in sWindows {
+            ; Skip windows with no title (often hidden background processes)
+            if !WinGetTitle(hwnd)
+                continue
+
+            WinGetPos(&X, &Y, &W, &H, hwnd)
+            area := W * H
+            if (area > maxArea) {
+                maxArea := area
+                targetHwnd := hwnd
+            }
+        }
+
+        if (targetHwnd) {
+            WinActivate(targetHwnd)
+        } else {
+            Run "C:\Users\hdasari\AppData\Local\Programs\sunsama\Sunsama.exe"
+        }
+    } catch {
+        ; If WinGetList fails (Sunsama isn't running at all)
         Run "C:\Users\hdasari\AppData\Local\Programs\sunsama\Sunsama.exe"
     }
 }
